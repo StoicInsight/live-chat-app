@@ -1,15 +1,21 @@
+import Add from '../img/addAvatar.png'
 
 
 const Register = () => {
   return (
     <div className="formContainer">
-      <div className="form-wrapper">
-        <span className="Logo">Lama Chat</span>
+      <div className="formWrapper">
+        <span className="logo">Lama Chat</span>
         <span className="title">Register</span>
-        <form action="">
+        <form>
           <input type="text" placeholder="Display Name"/>
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password"/>
+          <input style={{display:"none"}} type="file" id="file"/>
+          <label htmlFor="file">
+            <img src={Add} alt="" />
+            <span>Add an avatar</span>
+          </label>
           <button>Sign Up</button>
         </form>
         <p>Do you have an account? Login</p>
